@@ -44,6 +44,13 @@ body {
   font-family: "Inter", sans-serif;
   color: white !important;
 } */
+.container {
+  margin: auto;
+  justify-content: space-between;
+}
+.card {
+  max-width: 22%;
+}
 .card-img-top {
   width: 100%;
 }
