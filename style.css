@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+.navbar {
+  z-index: 1;
+}
+#logo {
+  height: 30px;
+}
+#search-icon {
+  position: absolute;
+  margin-left: -55px;
+  cursor: pointer;
+  height: 20px;
+}
+.nav-links li img {
+  height: 20px;
+  fill: white;
+  position: relative;
+  margin-top: -3px;
+}
+.nav-links li a {
+  font-size: 18px;
+  color: white !important;
+  font-weight: 600;
+}
+.nav-links li a:hover {
+  color: rgb(8, 206, 236) !important;
+}
+.nav-links li a img:hover {
+  color: rgb(8, 206, 236) !important;
+}
+.active {
+  color: aqua !important;
+}
+
+.container {
+  font-family: "Inter", sans-serif;
+  color: white !important;
+  height: 100vh;
+  z-index: 0;
+}
+
+.container h1 {
+  font-family: "Inter", sans-serif;
+  color: white !important;
+  z-index: 1;
+}
+.header-overlay {
+  position: relative;
+  background: url("https://m.media-amazon.com/images/I/613BBVSBnEL._UX358_FMwebp_QL85_.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.header-overlay::before {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.7598389697675946) 34%,
+    rgba(0, 0, 0, 0.6674019949776786) 72%
+  );
+}
+@media (max-width: 768px) {
+  .card {
+    min-width: 18rem;
+  }
+  .container-md {
+    flex-wrap: wrap;
+  }
+}
