@@ -36,49 +36,30 @@ body {
 .nav-links li a img:hover {
   color: rgb(8, 206, 236) !important;
 }
-.active {
+/* .active {
   color: aqua !important;
-}
+} */
 
-.container {
+/* .container {
   font-family: "Inter", sans-serif;
   color: white !important;
-  height: 100vh;
-  z-index: 0;
-}
-
-.container h1 {
-  font-family: "Inter", sans-serif;
-  color: white !important;
-  z-index: 1;
-}
-.header-overlay {
-  position: relative;
-  background: url("https://m.media-amazon.com/images/I/613BBVSBnEL._UX358_FMwebp_QL85_.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
-.header-overlay::before {
-  position: absolute;
-  top: 0;
-  z-index: 1;
+} */
+.card-img-top {
   width: 100%;
-  height: 100vh;
-
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.7598389697675946) 34%,
-    rgba(0, 0, 0, 0.6674019949776786) 72%
-  );
+}
+@media (max-width: 1200px) {
+  .card {
+    min-width: 18rem;
+  }
+  .container-md {
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 768px) {
   .card {
     min-width: 18rem;
   }
-  .container-md {
+  .container {
     flex-wrap: wrap;
   }
 }
